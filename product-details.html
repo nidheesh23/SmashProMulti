@@ -1,0 +1,105 @@
+<!doctype html><html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Product Details | SmashPro</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header class="navbar">
+            <div class="container nav-inner">
+                <a class="logo" href="index.html">
+                    SMASH<span>PRO</span>
+                    <small>BADMINTON STORE</small>
+                </a><button class="menu-btn">☰</button>
+                
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="products-detail.html">Rackets</a>
+                    <a href="Accessories.html">Accessories</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav><div class="nav-actions">
+                    <a href="cart.html">🛒<sup class="cart-count">0</sup>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="product-detail">
+                <div class="gallery">
+                    <div class="thumbs">
+                        <div class="thumb active">
+                            <img alt="">
+                        </div>
+                        <div class="thumb">
+                            <img alt="">
+                        </div>
+                        <div class="thumb">
+                            <img alt="">
+                        </div>
+                    </div>
+                    <div class="main-product-img">
+                        <img id="productImage" alt="Product">
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="kicker">Premium Racket</div>
+                    <h1 id="productName">Product</h1>
+                    <div id="productRating" class="rating"></div>
+                    <div class="price">
+                        <span id="productPrice"></span> 
+                        <span id="productOld" class="old"></span>
+                    </div>
+                    <p id="productDesc"></p>
+                    <div class="specs">
+                        <div class="spec">
+                            <strong>Weight</strong>
+                            <span id="weight"></span>
+                        </div>
+                        <div class="spec">
+                            <strong>Balance</strong>
+                            <span id="balance">
+
+                            </span>
+                        </div>
+                        <div class="spec">
+                            <strong>Material</strong>
+                            <span id="material">
+
+                            </span>
+                        </div>
+                        <div class="spec">
+                            <strong>Authenticity</strong>
+                            <span>100% Original</span>
+                        </div>
+                    </div>
+                    <div class="buy-row">
+                        <div class="qty">
+                            <button id="minus">−</button>
+                            <input id="qty" value="1" min="1" type="number">
+                            <button id="plus">+</button>
+                        </div>
+                        <button id="addBtn" class="btn btn-gold">Add to Cart</button>
+                        <button id="buyBtn" class="btn btn-dark">Buy Now</button>
+                    </div>
+                    <div class="notice">✓ Secure payment &nbsp; • &nbsp; ✓ Easy returns &nbsp; • &nbsp; ✓ Home delivery available</div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="active">Description</button>
+                    <button>Specifications</button>
+                    <button>Reviews</button>
+                </div>
+                <p>Designed for players who want dependable performance, confident control and powerful shots.</p>
+            </div>
+        </div>
+    </section>
+<footer><div class="container footer-bottom"><span>© <span data-year></span> SmashPro</span><a href="products.html">Back to Products</a></div></footer><div class="toast"></div><script src="js/products.js"></script><script src="js/main.js"></script><script src="js/product-details.js"></script></body></html>

@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Checkout | SmashPro</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    </head>
+    
+    <script src="js/products.js"></script>
+    <script src="js/checkout.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("3TFYL658CWawvxCN1");
+    </script>
+
+
+
+
+    <body>
+
+<header class="navbar">
+    <div class="container nav-inner">
+        <a class="logo" href="index.html">
+            
+            <i class="fa-solid fa-feather-pointed"></i>
+            
+            SMASH<span>PRO</span>
+            <small>BADMINTON STORE</small>
+        </a>
+
+         <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="product-details.html">Rackets</a>
+            <a href="products.html">Accessories</a>
+            <a href="offers.html">Offers</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+
+        <div> </div>
+
+    </div>
+
+    
+</header>
+
+<section class="section">
+    <div class="container checkout-layout">
+
+        
+        <form id="checkoutForm" class="form-card">
+
+    <h2>Delivery Address</h2>
+
+    <div class="form-grid">
+
+        <div class="field">
+            <label>Full Name *</label>
+            <input name="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="field">
+            <label>Phone Number *</label>
+            <input name="phone" required placeholder="+91 98765 43210">
+        </div>
+
+        <div class="field">
+            <label>House / Flat No. *</label>
+            <input name="house" required placeholder="House / flat number">
+        </div>
+
+        <div class="field">
+            <label>Street / Area *</label>
+            <input name="street" required placeholder="Street and area">
+        </div>
+
+        <div class="field">
+            <label>City *</label>
+            <input name="city" required placeholder="Enter city">
+        </div>
+
+        <div class="field">
+            <label>State *</label>
+            <select name="state" required>
+                <option value="">Select state</option>
+                <option>Tamil Nadu</option>
+                <option>Kerala</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Pincode *</label>
+            <input
+                name="pincode"
+                required
+                pattern="[0-9]{6}"
+                placeholder="6-digit pincode"
+            >
+        </div>
+
+        <div class="field">
+            <label>Email Address *</label>
+            <input
+                required
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+            >
+        </div>
+
+        <div class="field full">
+
+            <label>Delivery Option</label>
+
+            <div class="radio-list">
+
+                <label class="radio">
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="standard"
+                        checked
+                    >
+                    Standard Delivery — 3–5 business days
+                </label>
+
+                <label class="radio">
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="express"
+                    >
+                    Express Delivery — 1–2 business days (+₹99)
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button
+        type="submit"
+        id="continuePaymentBtn"
+        class="btn btn-gold"
+        style="margin-top:20px;width:100%"
+    >
+        Continue to Payment →
+    </button>
+
+</form>
+
+
+            <aside class="summary">
+                <h3>Order Summary</h3>
+                <div class="sum-row">
+                    <span>Subtotal</span><b id="checkoutSubtotal">₹0</b>
+                </div>
+                <div class="sum-row">
+                    <span>Shipping</span><b id="checkoutShipping">FREE</b>
+                </div>
+                <div class="sum-row total">
+                    <span>Total</span><span id="checkoutTotal">₹0</span>
+                </div>
+                <div class="notice">Your order will be delivered to the address you provide.
+
+                </div>
+            
+            </aside>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

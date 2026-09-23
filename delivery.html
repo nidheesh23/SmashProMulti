@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head><meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Delivery & Tracking | SmashPro</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+<header class="navbar">
+    <div class="container nav-inner">
+        <a class="logo" href="index.html">
+            SMASH<span>PRO</span>
+            <small>BADMINTON STORE</small>
+        </a>
+        
+        <nav class="nav-links" style="display:flex">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div class="kicker">Order Tracking</div>
+            <h2>Your Order</h2>
+            <p id="orderText">Order confirmed and ready for processing.</p>
+        </div>
+        <div class="form-card">
+            <div class="tracker">
+                <div class="track-step done">
+                    <div class="dot">✓</div>
+                    <span>Order Confirmed</span>
+                    <small>Received</small>
+                </div><div class="track-step done">
+                    <div class="dot">✓</div>
+                    <span>Payment Received</span>
+                    <small>Completed</small>
+                </div>
+                <div class="track-step active">
+                    <div class="dot">3</div>
+                    <span>Out for Delivery</span>
+                    <small>Coming soon</small>
+                </div>
+                <div class="track-step">
+                    <div class="dot">4</div>
+                    <span>Delivered</span>
+                    <small>Expected in 3–5 days</small>
+                </div>
+            </div>
+            <div class="notice">🚚 Standard home delivery is free for orders above ₹5,000. Express delivery is available at checkout.</div><br>
+            
+            <a href="products.html" class="btn btn-gold">Continue Shopping</a>
+        </div>
+    </div>
+</section>
+
+<footer><div class="container footer-bottom"><span>© <span data-year></span> SmashPro</span><a href="contact.html">Need help?</a></div></footer><script>document.querySelector('[data-year]').textContent=new Date().getFullYear();const o=JSON.parse(localStorage.getItem('smashpro_last_order')||'{}');if(o.order)document.querySelector('#orderText').textContent=`Order #${o.order} confirmed • ${o.method} • ${o.total?'Total '+('₹'+Number(o.total).toLocaleString('en-IN')):''}`;</script></body></html>
